@@ -1,0 +1,27 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        jcenter()
+
+        maven { url 'https://jitpack.io' } // Commonly used for certain third-party libraries
+        
+
+    }
+
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' } // Ensure this is added if the library is hosted here
+
+
+
+    }
+}
+rootProject.name = "callingApp"
+include ':app'
+
